@@ -16,15 +16,7 @@ const { locale } = useI18n();
 
 onMounted(() => {
   const script = document.createElement('script');
-  script.innerText = `
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?2c48aa7b3e09b34ad44617d2b7304316";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  `;
+  script.innerText = 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?2c48aa7b3e09b34ad44617d2b7304316";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();';
   document.head.appendChild(script);
 });
 
