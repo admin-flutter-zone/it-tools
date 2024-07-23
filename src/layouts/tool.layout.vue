@@ -10,7 +10,7 @@ import type { Tool } from '@/tools/tools.types';
 const route = useRoute();
 
 const head = computed<HeadObject>(() => ({
-  title: `${route.meta.name} - IT Tools`,
+  title: `${route.meta.name} - 在线开发工具箱`,
   meta: [
     {
       name: 'description',
@@ -20,6 +20,9 @@ const head = computed<HeadObject>(() => ({
       name: 'keywords',
       content: ((route.meta.keywords ?? []) as string[]).join(','),
     },
+  ],
+  script: [
+
   ],
 }));
 useHead(head);
