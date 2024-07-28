@@ -16,7 +16,7 @@ const { locale } = useI18n();
 
 onMounted(() => {
   const script = document.createElement('script');
-  script.innerText = 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?2c48aa7b3e09b34ad44617d2b7304316";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();';
+  script.innerText = '<script defer src="https://umami.flutter.zone/script.js" data-website-id="67fa27b4-3e17-45a3-8eb6-8a6ebf04a71e"></script>';
   document.head.appendChild(script);
 });
 
