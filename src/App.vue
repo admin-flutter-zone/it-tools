@@ -16,7 +16,10 @@ const { locale } = useI18n();
 
 onMounted(() => {
   const script = document.createElement('script');
-  script.innerText = '<script defer src="https://umami.flutter.zone/script.js" data-website-id="67fa27b4-3e17-45a3-8eb6-8a6ebf04a71e"></script>';
+  script.async = true;
+  script.defer = true;
+  script.setAttribute('src', 'https://umami.flutter.zone/script.js');
+  script.setAttribute('data-website-id', '67fa27b4-3e17-45a3-8eb6-8a6ebf04a71e');
   document.head.appendChild(script);
 });
 
